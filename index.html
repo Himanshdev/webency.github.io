@@ -1,0 +1,1614 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Webency</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="image/webency-favicon.png">
+    <!-- google fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- bootstrap icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="sal.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="m-0 p-0 canvas_expanded">
+    <!-- preloder  -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="lines">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+                <span class="line line-4"></span>
+                <span class="line line-5"></span>
+                <span class="line line-6"></span>
+                <span class="line line-7"></span>
+                <span class="line line-8"></span>
+                <span class="line line-9"></span>
+            </div>
+            <div class="text">Loading</div>
+        </div>
+        <button class="cancel-btn">Cancel Preloader</button>
+    </div>
+
+    <!-- navbar  -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg container-fluid header-sticky sticky justify-content-center">
+            <a class="navbar-brand" href="#"><img src="image/webency-logo.png" alt=""></a>
+            <button class="btn btn-primary mobil_button_1" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+
+                <span class="navbar-toggler-icon">
+                    <span class="ham_dot1"></span>
+                    <span class="ham_dot2"></span>
+                    <span class="ham_dot3"></span>
+                    <span class="ham_dot4"></span>
+                </span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <div class="mobile_nav">
+                        <img src="image/webency-logo.png" alt="">
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><svg
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#fff">
+                            <path
+                                d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z" />
+                        </svg></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="web_search_box">
+                        <div class="mob_search_web">
+                            <form action="#">
+                                <input type="text" name="search" id="search" placeholder="Search">
+                            </form>
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                        <ul class="navbar-nav  mb-2 mb-lg-0">
+                            <li class="nav-item drop_down position-relative">
+                                <a class="nav-link text-white"  href="#">Home</a>
+                                <ul class="sub-menu">
+                                    <li class="">
+                                        <a class="" href="#">Home One</a>
+                                    </li>
+                                    <li><a href="#">Home Two</a></li>
+                                    <li><a href="#">Home Three</a></li>
+                                </ul>
+                                <a class="nav-link text-white mean-expand mobile_togg" href="#">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-minus"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item position-relative">
+                                <a class="nav-link text-white" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item position-relative drop_down">
+                                <a class="nav-link text-white" href="#">Services
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Services</a>
+                                    </li>
+                                    <li><a href="#">Services Details</a></li>
+                                </ul>
+                                <a class="nav-link text-white mean-expand mobile_togg" href="#">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-minus"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item position-relative drop_down">
+                                <a class="nav-link text-white" href="#">Pages
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Portfolio</a>
+                                    </li>
+                                    <li><a href="#">Portfolio Details</a></li>
+                                    <li><a href="#">Faq</a></li>
+                                    <li><a href="#">Team</a></li>
+                                </ul>
+                                <a class="nav-link text-white mean-expand mobile_togg" href="#">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-minus"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item position-relative drop_down">
+                                <a class="nav-link text-white" href="#">Blog
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">Blog Grid</a>
+                                    </li>
+                                    <li><a href="#">Blog Standard</a></li>
+                                    <li><a href="#">Blog Details</a></li>
+                                </ul>
+                                <a class="nav-link text-white mean-expand mobile_togg" href="#">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-minus"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item position-relative">
+                                <a class="nav-link text-white position-relative" href="#">Contact</a>
+                            </li>
+
+                            <div class="mobile-contact">
+                                <div class="contact-menu">
+                                    <ul class="mob_dot_style">
+                                        <li>
+                                            <span><i class="fa-sharp fa-regular fa-envelope"></i></span>
+                                            <a href="mailto:Info@gmail.com">Info@gmail.com</a>
+                                        </li>
+                                        <li>
+                                            <span><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                                            <a href="#">225 Marion Street, Columbia</a>
+                                        </li>
+                                        <li>
+                                            <span><i class="fa-solid fa-phone-volume"></i></span>
+                                            <a href="tel:+00123456789">+ 00 123 456 789</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mobile-share">
+                                <ul class="mobile_dot-style_share">
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mobile_header-button">
+                                <a class="" href="#">Contact Us</a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse canva_expander justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0">
+                    <li class="nav-item drop_down position-relative">
+                        <a class="nav-link text-white active mean-expand" aria-current="page" href="#">Home</a>
+                        <ul class="sub-menu">
+                            <li class="active">
+                                <a class="active" href="#">Home One</a>
+                            </li>
+                            <li><a href="#">Home Two</a></li>
+                            <li><a href="#">Home Three</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link text-white mean-expand" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item position-relative drop_down">
+                        <a class="nav-link text-white mean-expand" href="#">Services</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Services</a>
+                            </li>
+                            <li><a href="#">Services Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item position-relative drop_down">
+                        <a class="nav-link text-white mean-expand" href="#">Pages</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li><a href="#">Portfolio Details</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item position-relative drop_down">
+                        <a class="nav-link text-white mean-expand" href="#">Blog</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">Blog Grid</a>
+                            </li>
+                            <li><a href="#">Blog Standard</a></li>
+                            <li><a href="#">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link text-white position-relative" href="#">Contact</a>
+                    </li>
+
+                    <div class="mobile-contact">
+                        <div class="contact-menu">
+                            <ul class="mob_dot_style">
+                                <li>
+                                    <span><i class="fa-sharp fa-regular fa-envelope"></i></span>
+                                    <a href="mailto:Info@gmail.com">Info@gmail.com</a>
+                                </li>
+                                <li>
+                                    <span><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                                    <a href="#">225 Marion Street, Columbia</a>
+                                </li>
+                                <li>
+                                    <span><i class="fa-solid fa-phone-volume"></i></span>
+                                    <a href="tel:+00123456789">+ 00 123 456 789</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mobile-share">
+                        <ul class="mobile_dot-style_share">
+                            <li>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile_header-button">
+                        <a class="" href="#">Contact Us</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="top_contact">
+                <a href="#" class="position-relative border-0 text-capitalize text-decoration-none"><span>Contact
+                        Us</span></a>
+            </div>
+            <!-- </div> -->
+        </nav>
+        <div class="container">
+            <!-- banner  -->
+            <div class="ban justify-content-center">
+                <div class="container">
+                    <div class="row align-items-lg-center justify-content-around banner_row">
+                        <div class="col-lg-7 ban-des" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="100">
+                            <h2 class="ban-h">Creative Thinking</h2>
+                            <h1>Strategic Thinking, Tangible <span>Results for Business!</span></h1>
+                            <p class="ban-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="#" class="ban-btn border-0 text-decoration-none text-capitalize"> Explore Now
+                            </a>
+                        </div>
+                        <div class="col-lg-5 ban-des_second">
+                            <div class="banner_img_group position-relative text-end">
+                                <div class="banner_img_group1 shake-y">
+                                    <img src="image/hero-1.png" alt="" class="img-fluid position-relative">
+                                </div>
+                                <div class="banner_img_group2 pulse position-absolute w-100">
+                                    <img src="image/hero-2-(1).png" alt=""  data-sal="slide-right"
+                                    data-sal-duration="1000" data-sal-delay="100">
+                                </div>
+                                <img src="image/shape-5.png" alt="" class="banner_img_group3 position-absolute">
+                                <img src="image/shape-6.png" alt="" class="banner_img_group4 position-absolute pulse">
+                                <img src="image/shape-7.png" alt="" class="banner_img_group5 position-absolute pulse">
+                                <img src="image/shape-8.png" alt="" class="banner_img_group6 position-absolute pulse">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shape2 position-absolute">
+                        <img src="image/shape-2.png" alt="">
+                    </div>
+                    <div class="shape3 position-absolute pulse">
+                        <img src="image/shape-3.png" alt="">
+                    </div>
+                    <div class="shape4 position-absolute shake-y">
+                        <img src="image/shape-4.png" alt="">
+                    </div>
+                    <div class="scroll_down position-absolute w-100">
+                        <img src="image/scroll-bg.png" alt="">
+                        <div class="scroll-icon jump position-absolute">
+                            <a href="#scroll_section">
+                                <img src="image/scroll.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shape1_box">
+            <div class="shape1 position-absolute">
+                <img src="image/shape-1.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <!-- About us section  -->
+    <section class="about_us position-relative" id="scroll_section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="about_images position-relative">
+                        <div class="about_circle position-absolute">
+                            <img src="image/ab-shape.png" alt="" class="position-absolute">
+                            <div class="circle">
+                                <svg class="shape-1" viewBox="0 0 100 100" width="100" height="100">
+                                    <defs>
+                                        <path id="circle" d="
+              M 50, 50
+              m -37, 0
+              a 37,37 0 1,1 74,0
+              a 37,37 0 1,1 -74,0"></path>
+                                    </defs>
+                                    <text font-size="15">
+                                        <textPath xlink:href="#circle" class="shape-1">
+                                            Creative Minds_, Creative Minds_
+                                        </textPath>
+                                    </text>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="about_us_image1 pulse position-absolute w-100">
+                            <img src="image/about-1.png" alt="">
+                        </div>
+                        <div class="about_us_image2 pulse position-absolute">
+                            <img src="image/about-2.png" alt="">
+                        </div>
+                        <div class="about_us_image3 pulse position-absolute">
+                            <img src="image/about-3.png" alt="">
+                        </div>
+                        <div class="about_us_image4 pulse position-absolute w-100">
+                            <img src="image/about-4.png" alt="">
+                        </div>
+                        <div class="about_us_shape1 shake-y position-absolute">
+                            <img src="image/shape-9.png" alt="">
+                        </div>
+                        <div class="about_us_shape2 pulse position-absolute">
+                            <img src="image/shape-10.png" alt="">
+                        </div>
+                        <div class="about_us_shape3 pulse position-absolute">
+                            <img src="image/shape-13.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 about-desc" data-sal="slide-left" data-sal-duration="1000"
+                    data-sal-delay="600">
+                    <h2>About Us</h2>
+                    <h3>Making Your Business More Unique</h3>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                        suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even
+                        slightly
+                        believable.</p>
+                    <p> There are many variations of passages of Lorem Ipsum available, but the majority have
+                        suffered
+                        alteration in some form,</p>
+                    <p>by injected humour, or randomised words which don't look even slightly believable.</p>
+                    <div class="top_contact about_contact">
+                        <a href="#" class="position-relative border-0 text-capitalize text-decoration-none"><span>Read
+                                More</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="about-section_right pulse position-absolute">
+                <img src="image/shape-37.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- project number  -->
+    <section class="project_counter position-relative overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="count_box col-lg-3 col-md-6 col-sm-12" id="counter-box" data-sal="slide-up" data-sal-duration="1000"
+                    data-sal-delay="100">
+                    <span class="counter count Count_number" data-number="254"></span>
+                    <p>Project Complete</p>
+                </div>
+                <div class="count_box col-lg-3 col-md-6 col-sm-12" id="counter-box" data-sal="slide-up" data-sal-duration="1000"
+                    data-sal-delay="200">
+                    <span class="counter count Count_number" data-number="164"></span>
+                    <p>Quality Team Member</p>
+                </div>
+                <div class="count_box col-lg-3 col-md-6 col-sm-12" id="counter-box" data-sal="slide-up" data-sal-duration="1000"
+                    data-sal-delay="300">
+                    <span class="counter count Count_number" data-number="433"></span>
+                    <p>Awards Winning</p>
+                </div>
+                <div class="count_box col-lg-3 col-md-6 col-sm-12" id="counter-box" data-sal="slide-up" data-sal-duration="1000"
+                    data-sal-delay="400">
+                    <span class="counter count Count_number" data-number="30"></span>
+                    <p>Years Of Experience</p>
+                </div>
+            </div>
+            <div class="counter_design1 position-absolute">
+                <img src="image/counter-shape.png" alt="Shape">
+            </div>
+            <div class="counter_design2 position-absolute">
+                <img src="image/counter-shape1.png" alt="Shape">
+            </div>
+        </div>
+    </section>
+
+    <!-- our services  -->
+    <section class="services position-relative">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="600">
+                    <h2 class="ch-h">Our Services</h2>
+                    <h3>Service We Provide</h3>
+                    <p class="ch-p">It has survived not only five centuries, but also the leap into
+                        electronic
+                        typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                        the
+                        release</p>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center" data-sal="slide-up" data-sal-duration="1000"
+                    data-sal-delay="100">
+                    <div class="service_out position-relative">
+                        <div class="service_box">
+                            <div class="service-icon position-relative">
+                                <i class="flaticon-design"><img src="image/logo-design_icon.png" alt=""></i>
+                                <img src="image/service-image.png" alt="" class="serv_img1">
+                                <img src="image/service-image1.svg" alt="" class="serv_img2">
+                            </div>
+                            <div class="service-content">
+                                <h4><a href="#">Logo Design</a></h4>
+                                <p>look like readable English. Many desktop publishing packages and web page editors
+                                    now use
+                                    Lorem Ipsum, and a search for</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center" data-sal="slide-up" data-sal-duration="1000"
+                    data-sal-delay="200">
+                    <div class="service_out">
+                        <div class="service_box">
+                            <div class="service-icon">
+                                <i class="flaticon-design"><img src="image/graphic-design.png" alt=""></i>
+                                <img src="image/service-image.png" alt="" class="serv_img1">
+                                <img src="image/service-image1.svg" alt="" class="serv_img2">
+                            </div>
+                            <div class="service-content">
+                                <h4><a href="#">Web Design</a></h4>
+                                <p>look like readable English. Many desktop publishing packages and web page editors
+                                    now use
+                                    Lorem Ipsum, and a search for</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center" data-sal="slide-up" data-sal-duration="1000"
+                    data-sal-delay="300">
+                    <div class="service_out">
+                        <div class="service_box">
+                            <div class="service-icon">
+                                <i class="flaticon-design"><img src="image/ui-design.png" alt=""></i>
+                                <img src="image/service-image.png" alt="" class="serv_img1">
+                                <img src="image/service-image1.svg" alt="" class="serv_img2">
+                            </div>
+                            <div class="service-content">
+                                <h4><a href="#">Mobile Apps</a></h4>
+                                <p>look like readable English. Many desktop publishing packages and web page editors
+                                    now use
+                                    Lorem Ipsum, and a search for</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center" data-sal="slide-up" data-sal-duration="1000"
+                    data-sal-delay="400">
+                    <div class="service_out">
+                        <div class="service_box">
+                            <div class="service-icon">
+                                <i class="flaticon-design"><img src="image/promotion.png" alt=""></i>
+                                <img src="image/service-image.png" alt="" class="serv_img1">
+                                <img src="image/service-image1.svg" alt="" class="serv_img2">
+                            </div>
+                            <div class="service-content">
+                                <h4><a href="#">Digital Marketing</a></h4>
+                                <p>look like readable English. Many desktop publishing packages and web page editors
+                                    now use
+                                    Lorem Ipsum, and a search for</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top_contact about_contact text-center service_contact">
+                    <a href="#" class="position-relative border-0 text-capitalize text-decoration-none"><span>View
+                            Details</span></a>
+                </div>
+                <div class="service-section-img_group">
+                    <div class="service-sec_img1 position-absolute pulse">
+                        <img src="image/shape-14.png" alt="Shape">
+                    </div>
+                    <div class="service-sec_img2 position-absolute">
+                        <img src="image/shape-15.png" alt="Shape">
+                    </div>
+                    <div class="service-sec_img3 position-absolute pulse">
+                        <img src="image/shape-14.png" alt="Shape">
+                    </div>
+                    <div class="service-sec_img5 position-absolute pulse">
+                        <img src="image/shape-16.png" alt="Shape">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial section  -->
+    <section class="testimonail position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="testimonial_content">
+                        <div>
+                            <h2>Testimonials</h2>
+                            <h3>What Our Customer Say About Us</h3>
+                        </div>
+                        <p>It has survived not only five centuries, but also the leap into
+                            electronic
+                            typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                            the
+                            release</p>
+                    </div>
+
+                    <!-- slider  -->
+                </div>
+            </div>
+        </div>
+        <div class="home-demo">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="testimonial-top d-flex justify-content-between align-items-center">
+                                    <div class="testimonial-left">
+                                        <div class="test-image">
+                                            <img src="image/test-1.png" alt="Image">
+                                        </div>
+                                        <div class="author_desc">
+                                            <h4>Erika Wagner</h4>
+                                            <span> Chief lil UX Designer</span>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-right">
+                                        <div class="test_rating">
+                                            <ul class="dots m-0 p-0">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="test-quote m-auto">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="44"
+                                                viewBox="0 0 60 44" fill="none">
+                                                <g opacity="0.3">
+                                                    <path
+                                                        d="M0.573543 43.6491C0.382362 42.3418 0.238976 40.9878 0.143385 39.5872C0.0477951 38.1865 0 37.1594 0 36.5057C0 30.2495 1.14709 24.3201 3.44126 18.7175C5.73543 13.0215 8.55535 8.21259 11.901 4.29077L26.9565 7.65233C25.1403 11.6675 23.6586 16.1963 22.5116 21.2386C21.4601 26.281 20.9343 31.0899 20.9343 35.6653C20.9343 35.8521 20.9343 36.2723 20.9343 36.9259C20.9343 37.4862 20.9343 38.1865 20.9343 39.0269C21.0299 39.7739 21.0777 40.5676 21.0777 41.408C21.1733 42.2484 21.2689 42.9954 21.3645 43.6491H0.573543Z"
+                                                        fill="#DCDEE7"></path>
+                                                    <path
+                                                        d="M59.4259 0.0126953C59.6171 1.31997 59.7605 2.67393 59.8561 4.07458C59.9517 5.47523 59.9995 6.50238 59.9995 7.15602C59.9995 13.4123 58.8524 19.3884 56.5582 25.0843C54.2641 30.687 51.4441 35.4492 48.0985 39.371L33.043 36.0094C34.8592 31.9942 36.293 27.4654 37.3445 22.4231C38.4916 17.3808 39.0652 12.5719 39.0652 7.9964C39.0652 7.80965 39.0652 7.43614 39.0652 6.87588C39.0652 6.22224 39.0174 5.52192 38.9218 4.77491C38.9218 3.93451 38.874 3.09412 38.7784 2.25373C38.7784 1.41334 38.7306 0.66633 38.635 0.0126953H59.4259Z"
+                                                        fill="#DCDEE7"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 class="title">Customers Review</h4>
+                                <p>Many desktop publishing web page editors now use Lorem Ipsum as their
+                                    default model text, and a search for 'lorem ipsum' will uncover many web
+                                    sites still in</p>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-top d-flex justify-content-between align-items-center">
+                                    <div class="testimonial-left">
+                                        <div class="test-image">
+                                            <img src="image/test-2.png" alt="Image">
+                                        </div>
+                                        <div class="author_desc">
+                                            <h4>Erika Wagner</h4>
+                                            <span> Chief lil UX Designer</span>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-right">
+                                        <div class="test_rating">
+                                            <ul class="dots m-0 p-0">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="test-quote m-auto">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="44"
+                                                viewBox="0 0 60 44" fill="none">
+                                                <g opacity="0.3">
+                                                    <path
+                                                        d="M0.573543 43.6491C0.382362 42.3418 0.238976 40.9878 0.143385 39.5872C0.0477951 38.1865 0 37.1594 0 36.5057C0 30.2495 1.14709 24.3201 3.44126 18.7175C5.73543 13.0215 8.55535 8.21259 11.901 4.29077L26.9565 7.65233C25.1403 11.6675 23.6586 16.1963 22.5116 21.2386C21.4601 26.281 20.9343 31.0899 20.9343 35.6653C20.9343 35.8521 20.9343 36.2723 20.9343 36.9259C20.9343 37.4862 20.9343 38.1865 20.9343 39.0269C21.0299 39.7739 21.0777 40.5676 21.0777 41.408C21.1733 42.2484 21.2689 42.9954 21.3645 43.6491H0.573543Z"
+                                                        fill="#DCDEE7"></path>
+                                                    <path
+                                                        d="M59.4259 0.0126953C59.6171 1.31997 59.7605 2.67393 59.8561 4.07458C59.9517 5.47523 59.9995 6.50238 59.9995 7.15602C59.9995 13.4123 58.8524 19.3884 56.5582 25.0843C54.2641 30.687 51.4441 35.4492 48.0985 39.371L33.043 36.0094C34.8592 31.9942 36.293 27.4654 37.3445 22.4231C38.4916 17.3808 39.0652 12.5719 39.0652 7.9964C39.0652 7.80965 39.0652 7.43614 39.0652 6.87588C39.0652 6.22224 39.0174 5.52192 38.9218 4.77491C38.9218 3.93451 38.874 3.09412 38.7784 2.25373C38.7784 1.41334 38.7306 0.66633 38.635 0.0126953H59.4259Z"
+                                                        fill="#DCDEE7"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 class="title">Customers Review</h4>
+                                <p>Many desktop publishing web page editors now use Lorem Ipsum as their
+                                    default model text, and a search for 'lorem ipsum' will uncover many web
+                                    sites still in</p>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-top d-flex justify-content-between align-items-center">
+                                    <div class="testimonial-left">
+                                        <div class="test-image">
+                                            <img src="image/test-3.png" alt="Image">
+                                        </div>
+                                        <div class="author_desc">
+                                            <h4>Erika Wagner</h4>
+                                            <span> Chief lil UX Designer</span>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-right">
+                                        <div class="test_rating">
+                                            <ul class="dots m-0 p-0">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="test-quote m-auto">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="44"
+                                                viewBox="0 0 60 44" fill="none">
+                                                <g opacity="0.3">
+                                                    <path
+                                                        d="M0.573543 43.6491C0.382362 42.3418 0.238976 40.9878 0.143385 39.5872C0.0477951 38.1865 0 37.1594 0 36.5057C0 30.2495 1.14709 24.3201 3.44126 18.7175C5.73543 13.0215 8.55535 8.21259 11.901 4.29077L26.9565 7.65233C25.1403 11.6675 23.6586 16.1963 22.5116 21.2386C21.4601 26.281 20.9343 31.0899 20.9343 35.6653C20.9343 35.8521 20.9343 36.2723 20.9343 36.9259C20.9343 37.4862 20.9343 38.1865 20.9343 39.0269C21.0299 39.7739 21.0777 40.5676 21.0777 41.408C21.1733 42.2484 21.2689 42.9954 21.3645 43.6491H0.573543Z"
+                                                        fill="#DCDEE7"></path>
+                                                    <path
+                                                        d="M59.4259 0.0126953C59.6171 1.31997 59.7605 2.67393 59.8561 4.07458C59.9517 5.47523 59.9995 6.50238 59.9995 7.15602C59.9995 13.4123 58.8524 19.3884 56.5582 25.0843C54.2641 30.687 51.4441 35.4492 48.0985 39.371L33.043 36.0094C34.8592 31.9942 36.293 27.4654 37.3445 22.4231C38.4916 17.3808 39.0652 12.5719 39.0652 7.9964C39.0652 7.80965 39.0652 7.43614 39.0652 6.87588C39.0652 6.22224 39.0174 5.52192 38.9218 4.77491C38.9218 3.93451 38.874 3.09412 38.7784 2.25373C38.7784 1.41334 38.7306 0.66633 38.635 0.0126953H59.4259Z"
+                                                        fill="#DCDEE7"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h4 class="title">Customers Review</h4>
+                                <p>Many desktop publishing web page editors now use Lorem Ipsum as their
+                                    default model text, and a search for 'lorem ipsum' will uncover many web
+                                    sites still in</p>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-top d-flex justify-content-between align-items-center">
+                                    <div class="testimonial-left">
+                                        <div class="test-image">
+                                            <img src="image/test-1.png" alt="Image">
+                                        </div>
+                                        <div class="author_desc">
+                                            <h4>Erika Wagner</h4>
+                                            <span> Chief lil UX Designer</span>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-right">
+                                        <div class="test_rating">
+                                            <ul class="dots m-0 p-0">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="test-quote m-auto">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="44"
+                                                viewBox="0 0 60 44" fill="none">
+                                                <g opacity="0.3">
+                                                    <path
+                                                        d="M0.573543 43.6491C0.382362 42.3418 0.238976 40.9878 0.143385 39.5872C0.0477951 38.1865 0 37.1594 0 36.5057C0 30.2495 1.14709 24.3201 3.44126 18.7175C5.73543 13.0215 8.55535 8.21259 11.901 4.29077L26.9565 7.65233C25.1403 11.6675 23.6586 16.1963 22.5116 21.2386C21.4601 26.281 20.9343 31.0899 20.9343 35.6653C20.9343 35.8521 20.9343 36.2723 20.9343 36.9259C20.9343 37.4862 20.9343 38.1865 20.9343 39.0269C21.0299 39.7739 21.0777 40.5676 21.0777 41.408C21.1733 42.2484 21.2689 42.9954 21.3645 43.6491H0.573543Z"
+                                                        fill="#DCDEE7"></path>
+                                                    <path
+                                                        d="M59.4259 0.0126953C59.6171 1.31997 59.7605 2.67393 59.8561 4.07458C59.9517 5.47523 59.9995 6.50238 59.9995 7.15602C59.9995 13.4123 58.8524 19.3884 56.5582 25.0843C54.2641 30.687 51.4441 35.4492 48.0985 39.371L33.043 36.0094C34.8592 31.9942 36.293 27.4654 37.3445 22.4231C38.4916 17.3808 39.0652 12.5719 39.0652 7.9964C39.0652 7.80965 39.0652 7.43614 39.0652 6.87588C39.0652 6.22224 39.0174 5.52192 38.9218 4.77491C38.9218 3.93451 38.874 3.09412 38.7784 2.25373C38.7784 1.41334 38.7306 0.66633 38.635 0.0126953H59.4259Z"
+                                                        fill="#DCDEE7"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 class="title">Customers Review</h4>
+                                <p>Many desktop publishing web page editors now use Lorem Ipsum as their
+                                    default model text, and a search for 'lorem ipsum' will uncover many web
+                                    sites still in</p>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-top d-flex justify-content-between align-items-center">
+                                    <div class="testimonial-left">
+                                        <div class="test-image">
+                                            <img src="image/test-1.png" alt="Image">
+                                        </div>
+                                        <div class="author_desc">
+                                            <h4 class="title">Erika Wagner</h4>
+                                            <span> Chief lil UX Designer</span>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-right">
+                                        <div class="test_rating">
+                                            <ul class="dots m-0 p-0">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="test-quote m-auto">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="44"
+                                                viewBox="0 0 60 44" fill="none">
+                                                <g opacity="0.3">
+                                                    <path
+                                                        d="M0.573543 43.6491C0.382362 42.3418 0.238976 40.9878 0.143385 39.5872C0.0477951 38.1865 0 37.1594 0 36.5057C0 30.2495 1.14709 24.3201 3.44126 18.7175C5.73543 13.0215 8.55535 8.21259 11.901 4.29077L26.9565 7.65233C25.1403 11.6675 23.6586 16.1963 22.5116 21.2386C21.4601 26.281 20.9343 31.0899 20.9343 35.6653C20.9343 35.8521 20.9343 36.2723 20.9343 36.9259C20.9343 37.4862 20.9343 38.1865 20.9343 39.0269C21.0299 39.7739 21.0777 40.5676 21.0777 41.408C21.1733 42.2484 21.2689 42.9954 21.3645 43.6491H0.573543Z"
+                                                        fill="#DCDEE7"></path>
+                                                    <path
+                                                        d="M59.4259 0.0126953C59.6171 1.31997 59.7605 2.67393 59.8561 4.07458C59.9517 5.47523 59.9995 6.50238 59.9995 7.15602C59.9995 13.4123 58.8524 19.3884 56.5582 25.0843C54.2641 30.687 51.4441 35.4492 48.0985 39.371L33.043 36.0094C34.8592 31.9942 36.293 27.4654 37.3445 22.4231C38.4916 17.3808 39.0652 12.5719 39.0652 7.9964C39.0652 7.80965 39.0652 7.43614 39.0652 6.87588C39.0652 6.22224 39.0174 5.52192 38.9218 4.77491C38.9218 3.93451 38.874 3.09412 38.7784 2.25373C38.7784 1.41334 38.7306 0.66633 38.635 0.0126953H59.4259Z"
+                                                        fill="#DCDEE7"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h4 class="title">Customers Review</h4>
+                                <p>Many desktop publishing web page editors now use Lorem Ipsum as their
+                                    default model text, and a search for 'lorem ipsum' will uncover many web
+                                    sites still in</p>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-top d-flex justify-content-between align-items-center">
+                                    <div class="testimonial-left">
+                                        <div class="test-image">
+                                            <img src="image/test-1.png" alt="Image">
+                                        </div>
+                                        <div class="author_desc">
+                                            <h4>Erika Wagner</h4>
+                                            <span> Chief lil UX Designer</span>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-right">
+                                        <div class="test_rating">
+                                            <ul class="dots m-0 p-0">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="test-quote m-auto">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="44"
+                                                viewBox="0 0 60 44" fill="none">
+                                                <g opacity="0.3">
+                                                    <path
+                                                        d="M0.573543 43.6491C0.382362 42.3418 0.238976 40.9878 0.143385 39.5872C0.0477951 38.1865 0 37.1594 0 36.5057C0 30.2495 1.14709 24.3201 3.44126 18.7175C5.73543 13.0215 8.55535 8.21259 11.901 4.29077L26.9565 7.65233C25.1403 11.6675 23.6586 16.1963 22.5116 21.2386C21.4601 26.281 20.9343 31.0899 20.9343 35.6653C20.9343 35.8521 20.9343 36.2723 20.9343 36.9259C20.9343 37.4862 20.9343 38.1865 20.9343 39.0269C21.0299 39.7739 21.0777 40.5676 21.0777 41.408C21.1733 42.2484 21.2689 42.9954 21.3645 43.6491H0.573543Z"
+                                                        fill="#DCDEE7"></path>
+                                                    <path
+                                                        d="M59.4259 0.0126953C59.6171 1.31997 59.7605 2.67393 59.8561 4.07458C59.9517 5.47523 59.9995 6.50238 59.9995 7.15602C59.9995 13.4123 58.8524 19.3884 56.5582 25.0843C54.2641 30.687 51.4441 35.4492 48.0985 39.371L33.043 36.0094C34.8592 31.9942 36.293 27.4654 37.3445 22.4231C38.4916 17.3808 39.0652 12.5719 39.0652 7.9964C39.0652 7.80965 39.0652 7.43614 39.0652 6.87588C39.0652 6.22224 39.0174 5.52192 38.9218 4.77491C38.9218 3.93451 38.874 3.09412 38.7784 2.25373C38.7784 1.41334 38.7306 0.66633 38.635 0.0126953H59.4259Z"
+                                                        fill="#DCDEE7"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 class="title">Customers Review</h4>
+                                <p>Many desktop publishing web page editors now use Lorem Ipsum as their
+                                    default model text, and a search for 'lorem ipsum' will uncover many web
+                                    sites still in</p>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-top d-flex justify-content-between align-items-center">
+                                    <div class="testimonial-left">
+                                        <div class="test-image">
+                                            <img src="image/test-1.png" alt="Image">
+                                        </div>
+                                        <div class="author_desc">
+                                            <h4>Erika Wagner</h4>
+                                            <span> Chief lil UX Designer</span>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-right">
+                                        <div class="test_rating">
+                                            <ul class="dots m-0 p-0">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="test-quote m-auto">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="44"
+                                                viewBox="0 0 60 44" fill="none">
+                                                <g opacity="0.3">
+                                                    <path
+                                                        d="M0.573543 43.6491C0.382362 42.3418 0.238976 40.9878 0.143385 39.5872C0.0477951 38.1865 0 37.1594 0 36.5057C0 30.2495 1.14709 24.3201 3.44126 18.7175C5.73543 13.0215 8.55535 8.21259 11.901 4.29077L26.9565 7.65233C25.1403 11.6675 23.6586 16.1963 22.5116 21.2386C21.4601 26.281 20.9343 31.0899 20.9343 35.6653C20.9343 35.8521 20.9343 36.2723 20.9343 36.9259C20.9343 37.4862 20.9343 38.1865 20.9343 39.0269C21.0299 39.7739 21.0777 40.5676 21.0777 41.408C21.1733 42.2484 21.2689 42.9954 21.3645 43.6491H0.573543Z"
+                                                        fill="#DCDEE7"></path>
+                                                    <path
+                                                        d="M59.4259 0.0126953C59.6171 1.31997 59.7605 2.67393 59.8561 4.07458C59.9517 5.47523 59.9995 6.50238 59.9995 7.15602C59.9995 13.4123 58.8524 19.3884 56.5582 25.0843C54.2641 30.687 51.4441 35.4492 48.0985 39.371L33.043 36.0094C34.8592 31.9942 36.293 27.4654 37.3445 22.4231C38.4916 17.3808 39.0652 12.5719 39.0652 7.9964C39.0652 7.80965 39.0652 7.43614 39.0652 6.87588C39.0652 6.22224 39.0174 5.52192 38.9218 4.77491C38.9218 3.93451 38.874 3.09412 38.7784 2.25373C38.7784 1.41334 38.7306 0.66633 38.635 0.0126953H59.4259Z"
+                                                        fill="#DCDEE7"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h4 class="title">Customers Review</h4>
+                                <p>Many desktop publishing web page editors now use Lorem Ipsum as their
+                                    default model text, and a search for 'lorem ipsum' will uncover many web
+                                    sites still in</p>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-top d-flex justify-content-between align-items-center">
+                                    <div class="testimonial-left">
+                                        <div class="test-image">
+                                            <img src="image/test-1.png" alt="Image">
+                                        </div>
+                                        <div class="author_desc">
+                                            <h4>Erika Wagner</h4>
+                                            <span> Chief lil UX Designer</span>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-right">
+                                        <div class="test_rating">
+                                            <ul class="dots m-0 p-0">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="test-quote m-auto">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="44"
+                                                viewBox="0 0 60 44" fill="none">
+                                                <g opacity="0.3">
+                                                    <path
+                                                        d="M0.573543 43.6491C0.382362 42.3418 0.238976 40.9878 0.143385 39.5872C0.0477951 38.1865 0 37.1594 0 36.5057C0 30.2495 1.14709 24.3201 3.44126 18.7175C5.73543 13.0215 8.55535 8.21259 11.901 4.29077L26.9565 7.65233C25.1403 11.6675 23.6586 16.1963 22.5116 21.2386C21.4601 26.281 20.9343 31.0899 20.9343 35.6653C20.9343 35.8521 20.9343 36.2723 20.9343 36.9259C20.9343 37.4862 20.9343 38.1865 20.9343 39.0269C21.0299 39.7739 21.0777 40.5676 21.0777 41.408C21.1733 42.2484 21.2689 42.9954 21.3645 43.6491H0.573543Z"
+                                                        fill="#DCDEE7"></path>
+                                                    <path
+                                                        d="M59.4259 0.0126953C59.6171 1.31997 59.7605 2.67393 59.8561 4.07458C59.9517 5.47523 59.9995 6.50238 59.9995 7.15602C59.9995 13.4123 58.8524 19.3884 56.5582 25.0843C54.2641 30.687 51.4441 35.4492 48.0985 39.371L33.043 36.0094C34.8592 31.9942 36.293 27.4654 37.3445 22.4231C38.4916 17.3808 39.0652 12.5719 39.0652 7.9964C39.0652 7.80965 39.0652 7.43614 39.0652 6.87588C39.0652 6.22224 39.0174 5.52192 38.9218 4.77491C38.9218 3.93451 38.874 3.09412 38.7784 2.25373C38.7784 1.41334 38.7306 0.66633 38.635 0.0126953H59.4259Z"
+                                                        fill="#DCDEE7"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h4 class="title">Customers Review</h4>
+                                <p>Many desktop publishing web page editors now use Lorem Ipsum as their
+                                    default model text, and a search for 'lorem ipsum' will uncover many web
+                                    sites still in</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="test-section-img_group">
+            <div class="test-sec_img1 position-absolute">
+                <img src="image/shape-17.png" alt="Shape">
+            </div>
+            <div class="test-sec_img2 position-absolute">
+                <img src="image/shape-15.png" alt="Shape">
+            </div>
+            <div class="test-sec_img3 position-absolute pulse">
+                <img src="image/shape-15.png" alt="Shape">
+            </div>
+            <div class="test-sec_img5 position-absolute pulse">
+                <img src="image/shape-18.png" alt="Shape">
+            </div>
+        </div>
+    </section>
+
+    <!-- meet our team  -->
+
+    <section class="team position-relative">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="600">
+                    <h2>How We Work</h2>
+                    <h3>Meet Our Team</h3>
+                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                        essentially unchanged. It was popularised in the 1960s with the release</p>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 text-center" data-sal="slide-up"
+                    data-sal-duration="1000" data-sal-delay="100">
+                    <div class="meet-item position-relative overflow-hidden">
+                        <div class="team-image position-relative overflow-hidden">
+                            <img src="image/team-1.jpg" alt="Team">
+                        </div>
+                        <div class="meet-content position-absolute">
+                            <div class="team-header position-relative">
+                                <h5 class="title-link"><a href="#" class="text-decoration-none">Alex Deitarson</a></h5>
+                                <span class="sub-title">UI/UX Designer</span>
+                            </div>
+                            <div class="team-share position-relative">
+                                <ul class="dot-style m-0 p-0">
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 text-center" data-sal="slide-up"
+                    data-sal-duration="1000" data-sal-delay="200">
+                    <div class="meet-item position-relative overflow-hidden">
+                        <div class="team-image position-relative overflow-hidden">
+                            <img src="image/team-2.jpg" alt="Team">
+                        </div>
+                        <div class="meet-content position-absolute">
+                            <div class="team-header position-relative">
+                                <h5 class="title-link"><a href="#" class="text-decoration-none">Alex Deitarson</a></h5>
+                                <span class="sub-title">UI/UX Designer</span>
+                            </div>
+                            <div class="team-share position-relative">
+                                <ul class="dot-style m-0 p-0">
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 text-center" data-sal="slide-up"
+                    data-sal-duration="1000" data-sal-delay="300">
+                    <div class="meet-item position-relative overflow-hidden">
+                        <div class="team-image position-relative overflow-hidden">
+                            <img src="image/team-3.jpg" alt="Team">
+                        </div>
+                        <div class="meet-content position-absolute">
+                            <div class="team-header position-relative">
+                                <h5 class="title-link"><a href="#" class="text-decoration-none">Alex Deitarson</a></h5>
+                                <span class="sub-title">UI/UX Designer</span>
+                            </div>
+                            <div class="team-share position-relative">
+                                <ul class="dot-style m-0 p-0">
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-md-6 col-sm-6 text-center" data-sal="slide-up"
+                    data-sal-duration="1000" data-sal-delay="400">
+                    <div class="meet-item position-relative overflow-hidden">
+                        <div class="team-image position-relative overflow-hidden">
+                            <img src="image/team-4.jpg" alt="Team">
+                        </div>
+                        <div class="meet-content position-absolute">
+                            <div class="team-header position-relative">
+                                <h5 class="title-link"><a href="#" class="text-decoration-none">Alex Deitarson</a></h5>
+                                <span class="sub-title">UI/UX Designer</span>
+                            </div>
+                            <div class="team-share position-relative">
+                                <ul class="dot-style m-0 p-0">
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top_contact about_contact text-center meet_contact">
+                    <a href="#" class="position-relative border-0 text-capitalize text-decoration-none"><span>View
+                            More</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="meet-section-img_group">
+            <div class="meet-sec_img1 position-absolute">
+                <img src="image/team-shape1.png" alt="Shape">
+            </div>
+            <div class="meet-sec_img2 position-absolute">
+                <img src="image/team-shape2.png" alt="Shape">
+            </div>
+            <div class="meet-sec_img3 position-absolute pulse">
+                <img src="image/shape-16.png" alt="Shape">
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section  -->
+    <section class="portfolio position-relative overflow-hidden">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-lg-6" data-sal="slide-right" data-sal-duration="1000" data-sal-delay="100">
+                    <div class="portfolio_content">
+                        <div>
+                            <h2>Portfolio</h2>
+                            <h3>Our Latest Work For Our Best Customer</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="filters filter-button-group">
+                        <ul>
+                            <li class="active"><a href="javascript:void(0);" data-filter="*">All</a></li>
+                            <li><a href="javascript:void(0);" data-filter="web">Web Design</a></li>
+                            <li><a href="javascript:void(0);" data-filter="photography">Digital Marketing</a></li>
+                            <li><a href="javascript:void(0);" data-filter="graphic-design">SEO</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- portfolio tab  -->
+                <div class="col-lg-12">
+                    <div id="new_port" class="isotope">
+                        <div class="grid-item" data-filter="web">
+                            <div class="port_images">
+                                <a class="#" href="#">
+                                    <img src="image/portfolio-2.jpg">
+                                </a>
+                            </div>
+                            <div class="port_content">
+                                <h3><a href="#">Web Development</a></h3>
+                                <p>Marketing/Consulting</p>
+                            </div>
+                        </div>
+                        <div class="grid-item" data-filter="web">
+                            <div class="port_images">
+                                <a class="#" href="#">
+                                    <img src="image/portfolio-4.jpg">
+                                </a>
+                            </div>
+                            <div class="port_content">
+                                <h3><a href="#">UX/UI Design</a></h3>
+                                <p>Marketing/Solution</p>
+                            </div>
+                        </div>
+                        <div class="grid-item" data-filter="photography">
+                            <div class="port_images">
+                                <a class="#" href="#">
+                                    <img src="image/portfolio-1.jpg">
+                                </a>
+                            </div>
+                            <div class="port_content">
+                                <h3><a href="#">Digital Marketing</a></h3>
+                                <p>Marketing/Solution</p>
+                            </div>
+                        </div>
+                        <div class="grid-item" data-filter="graphic-design">
+                            <div class="port_images">
+                                <a class="#" href="#">
+                                    <img src="image/portfolio-3.jpg">
+                                </a>
+                            </div>
+                            <div class="port_content">
+                                <h3><a href="#"> Branding & SEO </a></h3>
+                                <p>Marketing/ Desing Solution</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="port-section-img_group">
+            <div class="port-sec_img1 position-absolute">
+                <img src="image/portfolio-shape.png" alt="Shape">
+            </div>
+            <div class="port-sec_img3 position-absolute shake-y">
+                <img src="image/shape-19.png" alt="Shape">
+            </div>
+            <div class="port-sec_img4 position-absolute pulse">
+                <img src="image/shape-20.png" alt="Shape">
+            </div>
+            <div class="port-sec_img5 position-absolute shake-y">
+                <img src="image/shape-19.png" alt="Shape">
+            </div>
+            <div class="port-sec_img6 position-absolute pulse">
+                <img src="image/shape-23.png" alt="Shape">
+            </div>
+            <div class="port-sec_img7 position-absolute pulse">
+                <img src="image/shape-38.png" alt="Shape">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ section  -->
+    <section class="faq_section overflow-hidden position-relative">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="faq_content">
+                        <div class="faq_content" data-sal="slide-right" data-sal-duration="1000" data-sal-delay="100">
+                            <h2>F,A,Q</h2>
+                            <h3>Our Expert Answers</h3>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+                                necessary, making this the first true generator on the Internet. It uses a dictionary of
+                                over 200 Latin words,</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center faqz_sections">
+                <div class="col-lg-6">
+                    <div class="faq-img-group position-relative">
+                        <div class="faqz-img1">
+                            <div class="faq-img position-absolute pulse">
+                                <img src="image/about-1.png" alt="">
+                            </div>
+                            <img class="group-shape position-absolute pulse" src="image/shape-21.png" alt="">
+                            <img class="group-shape1 position-absolute shake-y" src="image/shape-22.png" alt="">
+                            <img class="group-shape2 position-absolute pulse" src="image/about-4.png" alt="">
+                        </div>
+                        <div class="faqz-img2 position-relative pulse">
+                            <img src="image/about-3.png" alt="">
+                        </div>
+                        <div class="faqz-img3 position-relative pulse">
+                            <div class="faq-group-img position-relative w-100">
+                                <img src="image/about-2.png" alt="">
+                            </div>
+                            <img class="faq_group-shape position-absolute pulse" src="image/shape-24.png" alt="">
+                            <img class="faq_group-shape1 position-absolute shake-y" src="image/shape-50.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- faq section  -->
+                <div class="col-lg-6">
+                    <div class="content" data-sal="slide-left" data-sal-duration="1000" data-sal-delay="100">
+                        <div class="acc position-relative">
+                            <div class="acc__card position-relative">
+                                <div class="acc__title position-relative open">What is a Meet With some form digital
+                                    platform</div>
+                                <div class="acc__panel open">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour.
+                                </div>
+                            </div>
+                            <div class="acc__card position-relative">
+                                <div class="acc__title position-relative">How Can A Digital Platform Helps Your Business
+                                    Grow?</div>
+                                <div class="acc__panel">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour.
+                                </div>
+                            </div>
+                            <div class="acc__card position-relative">
+                                <div class="acc__title position-relative">How Do I Book My Slot To Meet With Your
+                                    Technical Team?</div>
+                                <div class="acc__panel">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour.
+                                </div>
+                            </div>
+                            <div class="acc__card position-relative">
+                                <div class="acc__title position-relative">How Many Projects Hove Your Completed So far?
+                                </div>
+                                <div class="acc__panel">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-shape position-absolute">
+                            <img src="image/shape-26.png" alt="Shape">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="faq-section-img_group">
+            <div class="faq-sec_img1 position-absolute pulse">
+                <img src="image/faq-shape.png" alt="Shape">
+            </div>
+        </div>
+    </section>
+
+    <!-- blog posts  -->
+    <section class="blog position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center blog_head" data-sal="slide-up" data-sal-duration="1000"
+                    data-sal-delay="100">
+                    <h2>Latest Blog</h2>
+                    <h3>Latest Blog Posts</h3>
+                    <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
+                        making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
+                        words,</p>
+                </div>
+                <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="100">
+                    <div class="blog-box position-relative overflow-hidden">
+                        <div class="blog-image position-relative">
+                            <a href="#">
+                                <img src="image/blog-1.jpg" alt="Team">
+                            </a>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta_item">
+                                <span><i class="fa-regular fa-calendar-days"></i>23 Oct, 2023</span>
+                                <span><i class="fa-solid fa-users"></i>By<a href="#" class="text-decoration-none">
+                                        Admin</a></span>
+                            </div>
+                            <h4 class="_blog_title-link position-relative">
+                                <a href="#" class="text-decoration-none">Simple Proctives that will help you better
+                                    every day</a>
+                            </h4>
+                            <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as
+                                their default model text, and a search for.</p>
+                            <div class="top_contact about_contact blog_contact">
+                                <a href="#"
+                                    class="position-relative border-0 text-capitalize text-decoration-none"><span>Read
+                                        More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="200">
+                    <div class="blog-box position-relative overflow-hidden">
+                        <div class="blog-image position-relative">
+                            <a href="#">
+                                <img src="image/blog-2.jpg" alt="Team"></a>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta_item">
+                                <span><i class="fa-regular fa-calendar-days"></i>23 Oct, 2023</span>
+                                <span><i class="fa-solid fa-users"></i>By<a href="#" class="text-decoration-none">
+                                        Admin</a></span>
+                            </div>
+                            <h4 class="_blog_title-link position-relative">
+                                <a href="#" class="text-decoration-none">Frigilla lectus honcus anteom mode vehicul</a>
+                            </h4>
+                            <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as
+                                their default model text, and a search for.</p>
+                            <div class="top_contact about_contact blog_contact">
+                                <a href="#"
+                                    class="position-relative border-0 text-capitalize text-decoration-none"><span>Read
+                                        More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="300">
+                    <div class="blog-box position-relative overflow-hidden">
+                        <div class="blog-image position-relative">
+                            <a href="">
+                                <img src="image/blog-3.jpg" alt="Team">
+                            </a>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta_item">
+                                <span><i class="fa-regular fa-calendar-days"></i>23 Oct, 2023</span>
+                                <span><i class="fa-solid fa-users"></i>By<a href="#" class="text-decoration-none">
+                                        Admin</a></span>
+                            </div>
+                            <h4 class="_blog_title-link position-relative">
+                                <a href="#" class="text-decoration-none">Proin mauris risus turpis or nare felis aptent
+                                    nisl</a>
+                            </h4>
+                            <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as
+                                their default model text, and a search for.</p>
+                            <div class="top_contact about_contact blog_contact">
+                                <a href="#"
+                                    class="position-relative border-0 text-capitalize text-decoration-none"><span>Read
+                                        More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog-section-img_group">
+            <div class="blog-sec_img1 position-absolute">
+                <img src="image/blog-bg-shape.png" alt="Shape">
+            </div>
+            <div class="blog-sec_img2 position-absolute">
+                <img src="image/blog-bg-shape1.png" alt="Shape">
+            </div>
+        </div>
+    </section>
+
+    <!-- form section  -->
+    <section class="contact-sect position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="contact-form-box d-flex position-relative m-auto justify-content-between overflow-hidden">
+                    <div class="col-xl-7 col-lg-6 col-md-12">
+                        <div class="contact-left-part" data-sal="slide-right" data-sal-duration="1000"
+                            data-sal-delay="300">
+                            <div class="contact-content">
+                                <h3>Get In touch</h3>
+                                <h2>Have any Project Plan In your Mind?</h2>
+                                <p>
+                                    All the Lorem Ipsum generators on the Internet tend to repeat predefined
+                                    chunks as necessary, making this the first true generator on the
+                                    Internet. It uses a dictionary of over 200 Latin words,
+                                </p>
+                            </div>
+                            <div class="contact-details d-flex">
+                                <div class="contact-ic">
+                                    <img src="image/phone.png" alt="">
+                                </div>
+                                <div class="contact-number d-flex flex-column">
+                                    <span>For urgent help</span>
+                                    <a href="tel:+0000123456789" class="text-decoration-none">+ 0000 123-456-789</a>
+                                </div>
+                            </div>
+                            <div class="contact-details d-flex">
+                                <div class="contact-ic">
+                                    <img src="image/mail.png" alt="">
+                                </div>
+                                <div class="contact-mail d-flex flex-column">
+                                    <span>Mail us 24/7</span>
+                                    <a href="mailto:hello@gmail.com" class="text-decoration-none">hello@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- contact form  -->
+                    <div class="col-xl-5 col-lg-6 col-md-12">
+                        <form id="contacts" class="contact-form-box2" data-sal="slide-left" data-sal-duration="1000"
+                            data-sal-delay="300">
+                            <div class="form-items d-flex flex-column">
+                                <label>Your Name</label>
+                                <input type="text" name="" required>
+                            </div>
+                            <div class="form-items d-flex flex-column">
+                                <label>Email Address</label>
+                                <input type="email" name="" required>
+                            </div>
+                            <div class="form-items d-flex flex-column">
+                                <label>How can help you?</label>
+                                <textarea id="message" name=""></textarea>
+                            </div>
+                            <div class="contact-button">
+                                <button
+                                    class="text-decoration-none text-capitalize w-100 border-0 justify-content-center"
+                                    type="submit">Submit Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-section-shape">
+            <div class="contact-design1 position-absolute shake-y">
+                <img src="image/shape-31.png" alt="Shape">
+            </div>
+            <div class="contact-design2 position-absolute pulse">
+                <img src="image/shape-32.png" alt="Shape">
+            </div>
+            <div class="contact-design3 position-absolute pulse">
+                <img src="image/shape-33.png" alt="Shape">
+            </div>
+            <div class="contact-design4 position-absolute shake-y">
+                <img src="image/shape-34.png" alt="Shape">
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section  -->
+    <footer class="footer_section position-relative overflow-hidden">
+        <div class="footer_menu_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
+                        <div class="foot_1 position-relative">
+                            <a href="#">
+                                <img src="image/footer-logo.png" alt="">
+                            </a>
+                            <p>
+                                The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                                of letters, as opposed to using 'Content here.
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li>
+                                    <a href="#">
+                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.51962 6.1948L13.8489 0H12.586L7.95861 5.37887L4.26275 0H0L5.58887 8.13379L0 14.63H1.26293L6.14957 8.94974L10.0527 14.63H14.3154L8.51929 6.1948H8.51962ZM1.71797 0.950725H3.65775L12.5866 13.7225H10.6468L1.71797 0.950725Z"
+                                                fill="#161616"></path>
+                                        </svg>
+                                    </a></li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="foot_2 position-relative">
+                            <h4>Departments</h4>
+                            <ul>
+                                <li><a href="#">Family Medicine</a></li>
+                                <li><a href="#">Radiology</a></li>
+                                <li><a href="#">Women’s Health</a></li>
+                                <li><a href="#">Optician</a></li>
+                                <li><a href="#">Pediatrics</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="foot_3 position-relative">
+                            <h4>Useful Link</h4>
+                            <ul>
+                                <li><a href="#">Blog Grid</a></li>
+                                <li><a href="#">Blog Standard</a></li>
+                                <li><a href="#">Blog Details</a></li>
+                                <li><a href="#">Our Services</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="foot_4 position-relative">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Out Team</a></li>
+                                <li><a href="#">Pricing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="foot_5 position-relative">
+                            <h4>Contact Us</h4>
+                            <div class="foot_end_col">
+                                <ul>
+                                    <li>
+                                        <span><i class="fa-sharp fa-regular fa-envelope"></i></span>
+                                        <a href="mailto:Info@gmail.com">Info@gmail.com</a>
+                                    </li>
+                                    <li>
+                                        <span><i class="fa-solid fa-globe"></i></span><a href="#">www.website.com</a>
+                                    </li>
+                                    <li>
+                                        <span><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                                        <a href="#">225 Marion Street, Columbia</a>
+                                    </li>
+                                    <li>
+                                        <span><i class="fa-solid fa-phone-volume"></i></span>
+                                        <a href="tel:+00123456789">+ 00 123 456 789</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 copyright_bottom d-flex justify-content-between position-relative">
+                        <div class="copy_left">
+                            <p>
+                                Copyright © 2023 <a href="#" target="_blank"> ThemeJunction. </a> All Rights
+                                Reserved.
+                            </p>
+                        </div>
+                        <div class="copy_right">
+                            <ul>
+                                <li><a href="#">Setting &amp; Privacy</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-section-design">
+            <div class="footer-design1 position-absolute">
+                <img src="image/footer-bg-shape.png" alt="Shape">
+            </div>
+            <div class="footer-design2 position-absolute">
+                <img src="image/footer-bg-shape1.png" alt="Shape">
+            </div>
+            <div class="footer-design3 position-absolute shake-y">
+                <img src="image/shape-35.png" alt="Shape">
+            </div>
+            <div class="footer-design4 position-absolute pulse">
+                <img src="image/shape-36.png" alt="Shape">
+            </div>
+        </div>
+    </footer>
+
+    <!-- scroll up  -->
+    <div class="webency-scroll-top progress-done">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 242.418;">
+            </path>
+        </svg>
+        <div class="webency-scroll-top-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em"
+                viewBox="0 0 24 24" data-icon="mdi:arrow-up" class="iconify iconify--mdi">
+                <path fill="currentColor" d="M13 20h-2V8l-5.5 5.5l-1.42-1.42L12 4.16l7.92 7.92l-1.42 1.42L13 8v12Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <!-- toggle script  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- portfolio  -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js'></script>
+
+    <script src="sal.js"></script>
+    <script src="script.js"></script>
+</body>
